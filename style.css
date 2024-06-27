@@ -1,0 +1,11 @@
+/* CSS syntax 
+selector{
+    property:value 
+}    */
+
+body {
+  background-color: rgb(244, 244, 240);
+}
+* {
+  color: blue;
+}
