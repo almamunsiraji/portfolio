@@ -3,9 +3,101 @@ selector{
     property:value 
 }    */
 
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #333;
+  --background-color: #f4f4f4;
+  --card-background-color: #fff;
+  --card-shadow: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  margin: 0.5rem;
+} /*CSS3 variable */
+
 body {
-  background-color: rgb(244, 244, 240);
+  background-color: var(--background-color);
+  color: #333;
+  margin: 0rem;
+  padding: 0rem;
 }
-* {
-  color: blue;
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+button {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  padding: 0.8rem 1.6rem;
+  margin: 0.8rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+nav ul {
+  padding: 0rem;
+  margin: 0rem;
+}
+nav ul li {
+  list-style: none;
+  padding: 0rem 0.8rem;
+  margin: 0rem 0.8rem;
+}
+nav ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 900;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12 rem 0;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.8px;
+  margin: auto;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding: 1.2rem;
+}
+
+footer {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.card {
+  background-color: var(--card-background-color);
+  border-radius: 0.5rem;
+  margin: 1.2rem;
+  padding: 1.2rem;
+  box-shadow: 0 0.2rem 0.4rem var(--card-shadow);
+}
+
+.social-media a {
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+}
+.social-media {
+  background-color: var(--card-background-color);
+  border-radius: 0.5rem;
+  margin: 1.2rem;
 }
